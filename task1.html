@@ -14,22 +14,23 @@
     </header>
 
     <main>
-        <form action="#" method="post" class="form" id="form">
-            <h1>Заповніть форму для замовлення</h1>
+        <form action="#" method="post" class="form">
+            <h2>Заповніть форму для замовлення</h2>
+
             <label for="name">Ім'я</label>
-            <input type="text" id="name" name="user_name" required autocomplete="name">
+            <input type="text" id="name" name="user_name" required autocomplete="given-name">
 
-            <label for="surname">Прізвище</label>
-            <input type="text" id="surname" name="user_surname" required autocomplete="surname">
+            <label for="email">Електронна пошта</label>
+            <input type="email" id="email" name="user_email" required autocomplete="email">
 
-            <label for="address">Адреса</label>
-            <input type="address" id="text" name="user_address" required autocomplete="address">
+            <label for="street-address">Адреса</label>
+            <input type="text" id="street-address" name="user_street_address" required autocomplete="street-address">
 
             <label for="number">Номер телефону</label>
-            <input type="number" id="number" name="user_number" required autocomplete="number">
+            <input type="tel" id="number" name="user_number" required autocomplete="tel">
 
             <label for="choice">Вибір способу доставки</label>
-            <select id="choice" name="user_choice">
+            <select id="choice" name="user_choice" required>
                 <option value="" disabled selected>Оберіть зручний вам спосіб!</option>
                 <option value="courier">кур'єр</option>
                 <option value="mail">пошта</option>
@@ -38,7 +39,7 @@
 
             <fieldset>
                 <legend>Кількість товарів</legend>
-                <label><input type="radio" name="goods" value="one">Один</label>
+                <label><input type="radio" name="goods" value="one" required>Один</label>
                 <label><input type="radio" name="goods" value="two">Два</label>
                 <label><input type="radio" name="goods" value="three">Три</label>
                 <label><input type="radio" name="goods" value="four">Чотири</label>
@@ -51,12 +52,13 @@
             <label>
                 <input type="checkbox" name="terms" required>Погоджуюсь з умовами обслуговування</label>
             <input type="submit" value="Замовити!">
+        </form>
     </main>
     <footer>
 
         <p>&copy; 2024 Компанія. Всі права захищені.</p>
-        Curabitur nec sem et eros luctus dignissim.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur nec sem et eros luctus dignissim.</p>
     </footer>
 
 </body>
