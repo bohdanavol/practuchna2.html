@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма замовлення продукту</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Замовлення продукту</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="form" id="form">
+            <h1>Заповніть форму для замовлення</h1>
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="user_name" required autocomplete="name">
+
+            <label for="surname">Прізвище</label>
+            <input type="text" id="surname" name="user_surname" required autocomplete="surname">
+
+            <label for="address">Адреса</label>
+            <input type="address" id="text" name="user_address" required autocomplete="address">
+
+            <label for="number">Номер телефону</label>
+            <input type="number" id="number" name="user_number" required autocomplete="number">
+
+            <label for="choice">Вибір способу доставки</label>
+            <select id="choice" name="user_choice">
+                <option value="" disabled selected>Оберіть зручний вам спосіб!</option>
+                <option value="courier">кур'єр</option>
+                <option value="mail">пошта</option>
+                <option value="self_pickup">самовивіз</option>
+            </select>
+
+            <fieldset>
+                <legend>Кількість товарів</legend>
+                <label><input type="radio" name="goods" value="one">Один</label>
+                <label><input type="radio" name="goods" value="two">Два</label>
+                <label><input type="radio" name="goods" value="three">Три</label>
+                <label><input type="radio" name="goods" value="four">Чотири</label>
+                <label><input type="radio" name="goods" value="five">П'ять</label>
+                <label><input type="radio" name="goods" value="other">Інше</label>
+            </fieldset>
+
+            <label for="promo_code">Вкажіть промокод</label>
+            <textarea id="promo_code" name="user_promo_code" rows="4" cols="25"></textarea>
+            <label>
+                <input type="checkbox" name="terms" required>Погоджуюсь з умовами обслуговування</label>
+            <input type="submit" value="Замовити!">
+    </main>
+    <footer>
+
+        <p>&copy; 2024 Компанія. Всі права захищені.</p>
+        Curabitur nec sem et eros luctus dignissim.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </footer>
+
+</body>
+
+</html>
